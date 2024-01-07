@@ -1,0 +1,24 @@
+{
+  "name": "ExpenseTracker",
+  "version": "1.0.0",
+  "description": "Expense tracker application to track your daily needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./Server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tech1989plus1/ExpenseTracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tech1989plus1/ExpenseTracker/issues"
+  },
+  "homepage": "https://github.com/Tech1989plus1/ExpenseTracker#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
