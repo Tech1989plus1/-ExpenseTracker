@@ -4,11 +4,6 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const mockResponse = {
-  foo: 'bar',
-  bar: 'foo'
-};
+app.use('/', express.static(path.join(__dirname, '../Public')));
 
-app.get('/data', (req, res) => (res.send(mockResponse)));
-
-app.listen(port, () => console.log(`Listening on port ${port}!`));
+app.listen(port,  () => console.log("Example app listening on port 3000!"));

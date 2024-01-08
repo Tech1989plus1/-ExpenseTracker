@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./Server/index.js"
+    "start": "nodemon --exec babel-node ./Server/index.js",
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development & nodemon --exec babel-node ./Server/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,20 @@
   },
   "homepage": "https://github.com/Tech1989plus1/ExpenseTracker#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.16.4",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
   }
 }
